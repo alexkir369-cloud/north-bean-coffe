@@ -1,7 +1,7 @@
-# North & Bean
-
-Responsive fictional Copenhagen café demo.
+# North & Bean — EN / RU
 
 Website: https://alexkir369-cloud.github.io/north-bean-coffe/
 
-The repository root contains the ready-to-publish static website. Full React/TypeScript source, build configuration and instructions are included in north-bean-source.zip. Images are local; see IMAGE-SOURCES.md.
+Русская версия: https://alexkir369-cloud.github.io/north-bean-coffe/?lang=ru
+
+Use EN / RU to switch languages. Choice is remembered. Full React/TypeScript source and instructions: north-bean-source.zip. Repository root hosts the static website.
