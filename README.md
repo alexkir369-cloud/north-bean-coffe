@@ -1,7 +1,4 @@
-# North & Bean — EN / RU
-
+North & Bean
+A fictional Copenhagen café. A responsive coffee shop website built with React and TypeScript.
 Website: https://alexkir369-cloud.github.io/north-bean-coffe/
-
-Русская версия: https://alexkir369-cloud.github.io/north-bean-coffe/?lang=ru
-
-Use EN / RU to switch languages. Choice is remembered. Full React/TypeScript source and instructions: north-bean-source.zip. Repository root hosts the static website.
+Language: English. Visitors can use their browser's built-in translation feature if needed.
