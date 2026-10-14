@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react';
 import { t, type CopyKey } from '../i18n';
 import LanguageSwitch from './LanguageSwitch';
 
@@ -25,18 +24,6 @@ export default function Footer() {
                 <a href={link.href} className="rounded-full py-2 hover:text-paper hover:underline hover:underline-offset-4">{t(link.label)}</a>
               </li>
             ))}
-            <li>
-              {/* Placeholder account until the café has its own profile. */}
-              <a
-                href="https://www.instagram.com/alexkir.ux.ui/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 rounded-full py-2 hover:text-paper hover:underline hover:underline-offset-4"
-              >
-                Instagram <ArrowUpRight className="size-3.5" aria-hidden="true" />
-                <span className="sr-only">{t('footer.newTab')}</span>
-              </a>
-            </li>
             <li>
               <LanguageSwitch className="-mx-1.5" />
             </li>

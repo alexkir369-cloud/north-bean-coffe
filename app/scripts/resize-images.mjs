@@ -29,3 +29,10 @@ await sharp(join(dir, 'hero-nyhavn-morning.webp'))
   .webp({ quality: QUALITY })
   .toFile(join(dir, 'hero-nyhavn-morning-mobile.webp'));
 console.log('hero-nyhavn-morning.webp → mobile crop');
+
+// App screens: PNG exports from Figma (2×, transparent corners) → much lighter WebP with alpha.
+const appDir = join(dir, 'app');
+for (const file of readdirSync(appDir).filter((f) => f.endsWith('.png'))) {
+  await sharp(join(appDir, file)).webp({ quality: 85 }).toFile(join(appDir, file.replace(/\.png$/, '.webp')));
+  console.log(`app/${file} → webp`);
+}

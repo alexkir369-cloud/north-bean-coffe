@@ -319,6 +319,7 @@ export const copy = {
   "app.point2": { "en": "Pick-up time with live café load", "ru": "Время выдачи с учётом загрузки кофейни" },
   "app.point3": { "en": "Bring your own cup — €0.30 back", "ru": "Со своей чашкой — скидка 0,30 €" },
   "app.point4": { "en": "Every 9th coffee on us", "ru": "Каждый 9-й кофе — за наш счёт" },
+  "app.orderItem": { "en": "Order", "ru": "Заказать" },
   "app.screens": { "en": "App screens", "ru": "Экраны приложения" },
   "app.altHome": {
     "en": "App home screen: your usual flat white with oat milk and an Order again button",
@@ -392,7 +393,6 @@ export const copy = {
   "footer.tagline": { "en": "Slow mornings, good coffee.", "ru": "Неспешное утро, хороший кофе." },
   "footer.nav": { "en": "Footer", "ru": "Нижнее меню" },
   "footer.events": { "en": "Events", "ru": "События" },
-  "footer.newTab": { "en": "(opens in a new tab)", "ru": "(откроется в новой вкладке)" },
   "footer.note": { "en": "Concept project · Café details are illustrative", "ru": "Концепт-проект · Данные кофейни приведены для примера" },
 
   // Mobile sticky bar
