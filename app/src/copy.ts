@@ -1,5 +1,176 @@
 // Editorial translations: preserve meaning and café tone rather than literal wording.
 export const copy = {
+  // Page
+  "meta.title": {
+    "en": "North & Bean — Coffee for slow Copenhagen mornings",
+    "ru": "North & Bean — кофе для неспешного утра в Копенгагене"
+  },
+  "meta.description": {
+    "en": "North & Bean is a calm neighbourhood coffee bar by the canal in Copenhagen. Order ahead, skip the queue and pick up your cup still warm. A concept café website.",
+    "ru": "North & Bean — тихая кофейня по соседству, у канала в Копенгагене. Закажите заранее, обойдите очередь и заберите кофе ещё тёплым. Концепт-сайт кофейни."
+  },
+  "a11y.skip": {
+    "en": "Skip to content",
+    "ru": "Перейти к содержимому"
+  },
+  "a11y.mainNav": {
+    "en": "Main navigation",
+    "ru": "Основная навигация"
+  },
+  "a11y.mobileNav": {
+    "en": "Mobile navigation",
+    "ru": "Мобильная навигация"
+  },
+  "a11y.openMenu": {
+    "en": "Open menu",
+    "ru": "Открыть меню"
+  },
+  "a11y.closeMenu": {
+    "en": "Close menu",
+    "ru": "Закрыть меню"
+  },
+  "a11y.language": {
+    "en": "Site language",
+    "ru": "Язык сайта"
+  },
+  "a11y.home": {
+    "en": "North & Bean, back to top",
+    "ru": "North & Bean, в начало страницы"
+  },
+
+  // Header
+  "nav.menu": {
+    "en": "Menu",
+    "ru": "Меню"
+  },
+  "nav.guide": {
+    "en": "Coffee guide",
+    "ru": "Гид по кофе"
+  },
+  "nav.order": {
+    "en": "Order ahead",
+    "ru": "Заказ заранее"
+  },
+  "nav.story": {
+    "en": "Our story",
+    "ru": "Наша история"
+  },
+  "nav.visit": {
+    "en": "Visit",
+    "ru": "Как нас найти"
+  },
+  "header.order": {
+    "en": "Order ahead",
+    "ru": "Заказать"
+  },
+  "header.orderShort": {
+    "en": "Order",
+    "ru": "Заказ"
+  },
+
+  // Hero
+  "hero.alt": {
+    "en": "A woman with a takeaway coffee walks along the Nyhavn canal at sunrise",
+    "ru": "Девушка с кофе навынос идёт вдоль канала Нюхавн на рассвете"
+  },
+  "hero.status": {
+    "en": "Open now · 7:00–18:00 · quiet right now",
+    "ru": "Открыто · 7:00–18:00 · сейчас спокойно"
+  },
+  "hero.statusShort": {
+    "en": "Open now · quiet right now",
+    "ru": "Открыто · сейчас спокойно"
+  },
+  "hero.title1": {
+    "en": "Coffee for slow",
+    "ru": "Кофе для неспешного"
+  },
+  "hero.title2": {
+    "en": "Copenhagen mornings",
+    "ru": "утра в Копенгагене"
+  },
+  "hero.sub": {
+    "en": "A neighbourhood coffee bar by the canal. Order ahead, skip the queue, and pick up your cup still warm.",
+    "ru": "Кофейня по соседству, у самого канала. Закажите заранее, обойдите очередь и заберите свою чашку, пока она ещё тёплая."
+  },
+  "hero.order": {
+    "en": "Order ahead",
+    "ru": "Заказать заранее"
+  },
+  "hero.menu": {
+    "en": "See the menu",
+    "ru": "Посмотреть меню"
+  },
+  "hero.caption": {
+    "en": "Nyhavn, 7:40 am",
+    "ru": "Нюхавн, 7:40 утра"
+  },
+
+  // Coffee guide
+  "guide.eyebrow": {
+    "en": "Coffee guide",
+    "ru": "Гид по кофе"
+  },
+  "guide.title": {
+    "en": "What's in your cup?",
+    "ru": "Что в вашей чашке?"
+  },
+  "guide.sub": {
+    "en": "Hover a cup to see how it is built — espresso, milk and foam, in honest proportions.",
+    "ru": "Наведите на чашку, чтобы увидеть, из чего она состоит: эспрессо, молоко и пена в честных пропорциях."
+  },
+  "guide.subTouch": {
+    "en": "Swipe and tap a cup to see how it is built.",
+    "ru": "Листайте и нажимайте на чашку, чтобы увидеть, из чего она состоит."
+  },
+  "guide.list": {
+    "en": "Coffee drinks",
+    "ru": "Кофейные напитки"
+  },
+  "cup.espresso.name": { "en": "Espresso", "ru": "Эспрессо" },
+  "cup.espresso.note": { "en": "30 ml · intense", "ru": "30 мл · насыщенный" },
+  "cup.espresso.text": {
+    "en": "The heart of every drink: 30 ml of concentrated coffee under a hazel-brown crema.",
+    "ru": "Основа любого напитка: 30 мл насыщенного кофе под ореховой пенкой-кремой."
+  },
+  "cup.cortado.name": { "en": "Cortado", "ru": "Кортадо" },
+  "cup.cortado.note": { "en": "1 : 1 espresso & milk", "ru": "эспрессо и молоко 1 : 1" },
+  "cup.cortado.text": {
+    "en": "Equal parts espresso and warm milk — short, smooth and still unmistakably coffee.",
+    "ru": "Эспрессо и тёплое молоко поровну: коротко, мягко, а вкус кофе всё равно главный."
+  },
+  "cup.flatWhite.name": { "en": "Flat White", "ru": "Флэт уайт" },
+  "cup.flatWhite.note": { "en": "double ristretto, silky milk", "ru": "двойной ристретто, шёлковое молоко" },
+  "cup.flatWhite.text": {
+    "en": "Our signature: a double ristretto with silky, barely-foamed milk. Smaller and stronger than a latte.",
+    "ru": "Наш фирменный: двойной ристретто и шелковистое молоко с едва заметной пенкой. Меньше и крепче латте."
+  },
+  "cup.cappuccino.name": { "en": "Cappuccino", "ru": "Капучино" },
+  "cup.cappuccino.note": { "en": "airy foam on top", "ru": "воздушная пена сверху" },
+  "cup.cappuccino.text": {
+    "en": "A third espresso, a third milk, a third airy foam — light, round and classic.",
+    "ru": "Треть эспрессо, треть молока, треть воздушной пены — лёгкий, округлый, классический."
+  },
+  "cup.latte.name": { "en": "Latte", "ru": "Латте" },
+  "cup.latte.note": { "en": "mild & milky", "ru": "мягкий и молочный" },
+  "cup.latte.text": {
+    "en": "A single shot in plenty of steamed milk under a thin layer of foam. Gentle and comforting.",
+    "ru": "Одна порция эспрессо в большой чашке горячего молока под тонкой пенкой. Мягко и уютно."
+  },
+  "cup.americano.name": { "en": "Americano", "ru": "Американо" },
+  "cup.americano.note": { "en": "espresso & hot water", "ru": "эспрессо и горячая вода" },
+  "cup.americano.text": {
+    "en": "Espresso lengthened with hot water — the size of a filter coffee with the depth of a shot.",
+    "ru": "Эспрессо, долитый горячей водой: объём фильтр-кофе и глубина эспрессо."
+  },
+  "cup.mocha.name": { "en": "Mocha", "ru": "Мокко" },
+  "cup.mocha.note": { "en": "chocolate & espresso", "ru": "шоколад и эспрессо" },
+  "cup.mocha.text": {
+    "en": "Dark chocolate, espresso and steamed milk with a little foam on top. Dessert in a cup.",
+    "ru": "Тёмный шоколад, эспрессо и горячее молоко под шапочкой пены. Почти десерт."
+  },
+
+  // Legacy sections below — replaced in later parts of the 2.0 redesign.
   "t0": {
     "en": "Signature Flat White",
     "ru": "Фирменный флэт уайт"
@@ -31,66 +202,6 @@ export const copy = {
   "t7": {
     "en": "Espresso with steamed milk and a touch of vanilla syrup.",
     "ru": "Эспрессо с нежным вспененным молоком и лёгкой сладостью ванильного сиропа."
-  },
-  "t8": {
-    "en": "Home",
-    "ru": "Главная"
-  },
-  "t9": {
-    "en": "Menu",
-    "ru": "Меню"
-  },
-  "t10": {
-    "en": "About",
-    "ru": "О нас"
-  },
-  "t11": {
-    "en": "Contact",
-    "ru": "Контакты"
-  },
-  "t12": {
-    "en": "Skip to content",
-    "ru": "Перейти к содержимому"
-  },
-  "t13": {
-    "en": "Main navigation",
-    "ru": "Основная навигация"
-  },
-  "t14": {
-    "en": "Mobile navigation",
-    "ru": "Мобильная навигация"
-  },
-  "t15": {
-    "en": "Close menu",
-    "ru": "Закрыть меню"
-  },
-  "t16": {
-    "en": "Open menu",
-    "ru": "Открыть меню"
-  },
-  "t17": {
-    "en": "Cozy coffee shop interior",
-    "ru": "Уютный интерьер кофейни"
-  },
-  "t18": {
-    "en": "Est. 2014 · Copenhagen",
-    "ru": "С 2014 года · Копенгаген"
-  },
-  "t19": {
-    "en": "Coffee made for",
-    "ru": "Хороший кофе."
-  },
-  "t20": {
-    "en": "slow mornings",
-    "ru": "Утро без спешки."
-  },
-  "t21": {
-    "en": "A neighbourhood coffee bar roasting in small batches and serving cups with care — no rush, just good coffee.",
-    "ru": "Уютная кофейня по соседству. Обжариваем зерно небольшими партиями и с заботой готовим каждую чашку. Здесь можно никуда не спешить."
-  },
-  "t22": {
-    "en": "View Menu",
-    "ru": "Посмотреть меню"
   },
   "t23": {
     "en": "Popular Drinks",
