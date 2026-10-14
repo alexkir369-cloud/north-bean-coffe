@@ -1,9 +1,8 @@
 # Image sources
 
-Downloaded from images.unsplash.com and visually checked. Images illustrate the fictional café and drinks.
+All photos in `public/images/` are AI-generated concept visuals supplied with the North & Bean 2.0 design
+(Figma "North & Bean", page "Website 2.0"). They illustrate a fictional café and do not depict real people,
+places of business or products.
 
-- flat-white.jpg: https://images.unsplash.com/photo-1541167760496-1628856ab772
-- espresso.jpg: https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd
-- cold-brew.jpg: https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5
-- vanilla-latte.jpg: https://images.unsplash.com/photo-1509042239860-f550ce710b93
-- interior.jpg: https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb
+- Photos: `*.webp` (hero, menu, story, bean of the month, events, visit)
+- App screens: `app/*.png` (order-ahead app mock-ups)

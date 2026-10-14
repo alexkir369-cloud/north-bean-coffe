@@ -21,6 +21,11 @@ export const languageHref = (next: Lang) => {
   return url.pathname + url.search + url.hash;
 };
 
+const priceFormat = new Intl.NumberFormat(lang === 'ru' ? 'ru-RU' : 'en-IE', { style: 'currency', currency: 'EUR' });
+
+/** €4.20 in English, 4,20 € in Russian. */
+export const formatPrice = (euros: number) => priceFormat.format(euros);
+
 export const rememberLanguage = () => {
   try { localStorage.setItem(STORAGE_KEY, lang); } catch { /* Storage may be disabled. */ }
 };

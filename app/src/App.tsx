@@ -3,6 +3,8 @@ import { lang, rememberLanguage, t } from './i18n';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import CoffeeGuide from './components/CoffeeGuide';
+import Menu from './components/Menu';
+import { ToastProvider } from './components/Toast';
 import { LegacyFooter, LegacySections } from './components/LegacySections';
 
 function useRevealOnScroll() {
@@ -35,16 +37,17 @@ function App() {
   useRevealOnScroll();
 
   return (
-    <>
+    <ToastProvider>
       <a href="#main" className="skip-link">{t('a11y.skip')}</a>
       <Header />
       <main id="main" tabIndex={-1}>
         <Hero />
         <CoffeeGuide />
+        <Menu />
         <LegacySections />
       </main>
       <LegacyFooter />
-    </>
+    </ToastProvider>
   );
 }
 

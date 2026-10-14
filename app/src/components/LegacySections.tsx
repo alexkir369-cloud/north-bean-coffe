@@ -1,76 +1,10 @@
 // Temporary: v1 sections kept until they are rebuilt in parts 2–4 of the 2.0 redesign.
 import { MapPin, Clock, Mail, Phone, Coffee } from 'lucide-react';
-import { lang as language, t } from '../i18n';
+import { t } from '../i18n';
 
 export function LegacySections() {
-const drinks = [
-  {
-    name: t('t0'),
-    description: t('t1'),
-    price: '€4.50',
-    image: `${import.meta.env.BASE_URL}images/flat-white.jpg`,
-  },
-  {
-    name: t('t2'),
-    description: t('t3'),
-    price: '€3.00',
-    image: `${import.meta.env.BASE_URL}images/espresso.jpg`,
-  },
-  {
-    name: t('t4'),
-    description: t('t5'),
-    price: '€4.80',
-    image: `${import.meta.env.BASE_URL}images/cold-brew.jpg`,
-  },
-  {
-    name: t('t6'),
-    description: t('t7'),
-    price: '€4.20',
-    image: `${import.meta.env.BASE_URL}images/vanilla-latte.jpg`,
-  },
-];  
-
   return (
     <div className="font-serif text-stone-800">
-      {/* {t('t23')} */}
-      <section id="menu" className="py-24 md:py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-amber-700 text-sm tracking-[0.25em] uppercase mb-3">{t('t23')}</p>
-            <h2 className="text-4xl md:text-5xl font-light text-stone-900 mb-4">{t('t24')}</h2>
-            <p className="text-stone-600 max-w-lg mx-auto">
-              {t('t25')}
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-8">
-            {drinks.map((drink, i) => (
-              <article
-                key={drink.name}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
-                style={{ animationDelay: `${i * 100}ms` }}
-              >
-                <div className="aspect-[4/5] overflow-hidden bg-stone-100">
-                  <img
-                    src={drink.image}
-                    alt={drink.name}
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-                <div className="p-7">
-                  <div className="flex items-baseline justify-between gap-3 mb-3">
-                    <h3 className="text-xl font-medium text-stone-900">{drink.name}</h3>
-                    <span className="text-amber-800 font-semibold whitespace-nowrap">{language === 'ru' ? drink.price.slice(1).replace('.', ',') + ' €' : drink.price}</span>
-                  </div>
-                  <p className="text-stone-600 text-sm leading-relaxed">{drink.description}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* About */}
       <section id="story" className="py-24 md:py-32 px-6 bg-[#f3ede4]">
         <div className="max-w-4xl mx-auto text-center">
