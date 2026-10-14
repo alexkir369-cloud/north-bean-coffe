@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover North &amp; Bean: small-batch coffee, slow mornings and neighbourhood warmth. A fictional Copenhagen café demo." />
-    <title>North &amp; Bean — Slow mornings, good coffee</title>
-    <script type="module" crossorigin src="./index-BCVU3lLO.js"></script>
-    <link rel="stylesheet" crossorigin href="./index-DRyQz917.css">
+    <meta name="theme-color" content="#2B1D17" />
+    <meta name="description" content="North &amp; Bean is a calm neighbourhood coffee bar by the canal in Copenhagen. Order ahead, skip the queue and pick up your cup still warm. A concept café website." />
+    <title>North &amp; Bean — Coffee for slow Copenhagen mornings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking the first paint; text uses fallbacks for a moment (display=swap). -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" /></noscript>
+    <!-- Hero photo is the largest paint; fetch it in parallel with the JS bundle. -->
+    <link rel="preload" as="image" href="/north-bean-coffe/images/hero-nyhavn-morning-mobile.webp" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/north-bean-coffe/images/hero-nyhavn-morning.webp" media="(min-width: 768px)" fetchpriority="high" />
+    <script type="module" crossorigin src="/north-bean-coffe/assets/index-DrTG0Oyr.js"></script>
+    <link rel="stylesheet" crossorigin href="/north-bean-coffe/assets/index-DxBysCMQ.css">
   </head>
   <body>
     <div id="root"></div>
