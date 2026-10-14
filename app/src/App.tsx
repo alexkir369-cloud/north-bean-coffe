@@ -4,6 +4,9 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import CoffeeGuide from './components/CoffeeGuide';
 import Menu from './components/Menu';
+import Story from './components/Story';
+import BeanOfMonth from './components/BeanOfMonth';
+import OrderApp from './components/OrderApp';
 import { ToastProvider } from './components/Toast';
 import { LegacyFooter, LegacySections } from './components/LegacySections';
 
@@ -44,6 +47,9 @@ function App() {
         <Hero />
         <CoffeeGuide />
         <Menu />
+        <Story />
+        <BeanOfMonth />
+        <OrderApp />
         <LegacySections />
       </main>
       <LegacyFooter />

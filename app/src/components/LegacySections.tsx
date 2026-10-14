@@ -5,36 +5,6 @@ import { t } from '../i18n';
 export function LegacySections() {
   return (
     <div className="font-serif text-stone-800">
-      {/* About */}
-      <section id="story" className="py-24 md:py-32 px-6 bg-[#f3ede4]">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-amber-700 text-sm tracking-[0.25em] uppercase mb-3">{t('t26')}</p>
-          <h2 className="text-4xl md:text-5xl font-light text-stone-900 mb-8">{t('t27')}</h2>
-          <div className="space-y-5 text-stone-600 leading-relaxed text-lg">
-            <p>
-              {t('t28')}
-            </p>
-            <p>
-              {t('t29')}
-            </p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 mt-12 pt-12 border-t border-stone-300/60">
-            <div>
-              <p className="text-3xl font-light text-amber-800">10+</p>
-              <p className="text-sm text-stone-600 mt-1">{t('t30')}</p>
-            </div>
-            <div>
-              <p className="text-3xl font-light text-amber-800">7</p>
-              <p className="text-sm text-stone-600 mt-1">{t('t31')}</p>
-            </div>
-            <div>
-              <p className="text-3xl font-light text-amber-800">1</p>
-              <p className="text-sm text-stone-600 mt-1">{t('t32')}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* {t('t33')} */}
       <section id="visit" className="py-24 md:py-32 px-6">
         <div className="max-w-5xl mx-auto">

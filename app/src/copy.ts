@@ -257,35 +257,88 @@ export const copy = {
   "card.coldBrewTonic.text": { "en": "18-hour cold brew, tonic and a slice of orange.", "ru": "Колд брю 18-часовой выдержки, тоник и долька апельсина." },
   "card.coldBrewTonic.alt": { "en": "Cold brew tonic with ice and an orange slice", "ru": "Колд брю тоник со льдом и долькой апельсина" },
 
+  // Our story
+  "story.eyebrow": { "en": "Our story", "ru": "Наша история" },
+  "story.title": { "en": "A corner built\nfor lingering", "ru": "Место, где хочется\nзадержаться" },
+  "story.text": {
+    "en": "North & Bean began as a tiny espresso cart by the canal. Today we roast in small batches, bake kanelsnegle at six every morning and still know most of our guests by name — and by their usual.",
+    "ru": "North & Bean начиналась с крошечной кофейной тележки у канала. Сегодня мы обжариваем зерно небольшими партиями, каждое утро в шесть печём канельснегле и по-прежнему знаем большинство гостей по имени — и по их любимому заказу."
+  },
+  "story.textShort": {
+    "en": "A tiny espresso cart by the canal grew into a neighbourhood café. We roast in small batches, bake at six and know most guests by their usual.",
+    "ru": "Маленькая кофейная тележка у канала выросла в кофейню по соседству. Мы обжариваем зерно небольшими партиями, печём в шесть утра и помним, кто что обычно заказывает."
+  },
+  "story.alt": {
+    "en": "Two friends sharing coffee and kanelsnegle at a window table",
+    "ru": "Двое друзей пьют кофе с канельснегле за столиком у окна"
+  },
+  "story.years": { "en": "years by the canal", "ru": "лет у канала" },
+  "story.yearsShort": { "en": "years", "ru": "лет" },
+  "story.origins": { "en": "origins on rotation", "ru": "регионов в ротации" },
+  "story.originsShort": { "en": "origins", "ru": "регионов" },
+  "story.shot": { "en": "shot at a time", "ru": "чашка за раз" },
+
+  // Bean of the month
+  "bean.eyebrow": { "en": "Bean of the month", "ru": "Зерно месяца" },
+  "bean.title": { "en": "Ethiopia Guji,\nwashed", "ru": "Эфиопия Гуджи,\nмытая обработка" },
+  "bean.text": {
+    "en": "Grown at 2,100 m by smallholder farmers in the Guji highlands, hand-sorted and washed for a clean, floral cup. Brewed best as a V60.",
+    "ru": "Выращено на высоте 2100 м небольшими фермерскими хозяйствами в высокогорье Гуджи, отсортировано вручную и обработано мытым способом — для чистой, цветочной чашки. Лучше всего раскрывается в V60."
+  },
+  "bean.textShort": {
+    "en": "Grown at 2,100 m, hand-sorted and washed for a clean, floral cup.",
+    "ru": "Выращено на высоте 2100 м, отсортировано вручную и вымыто — для чистой, цветочной чашки."
+  },
+  "bean.alt": {
+    "en": "Water poured over a V60 dripper beside a bag of beans",
+    "ru": "Кофе заваривают в воронке V60 рядом с пачкой зерна"
+  },
+  "bean.notes": { "en": "Tasting notes", "ru": "Вкусовые ноты" },
+  "bean.note.blueberry": { "en": "Blueberry", "ru": "Черника" },
+  "bean.note.jasmine": { "en": "Jasmine", "ru": "Жасмин" },
+  "bean.note.honey": { "en": "Honey", "ru": "Мёд" },
+  "bean.note.bergamot": { "en": "Bergamot", "ru": "Бергамот" },
+  "bean.roast": { "en": "Roast", "ru": "Обжарка" },
+  "bean.roastLevel": { "en": "Roast level: 2 of 5, light", "ru": "Степень обжарки: 2 из 5, светлая" },
+  "bean.light": { "en": "Light", "ru": "Светлая" },
+  "bean.dark": { "en": "Dark", "ru": "Тёмная" },
+  "bean.order": { "en": "Order a V60", "ru": "Заказать V60" },
+  "bean.buy": { "en": "Buy beans · €16 / 250 g", "ru": "Купить зерно · 16 € / 250 г" },
+
+  // Order-ahead app
+  "app.eyebrow": { "en": "Order ahead", "ru": "Заказ заранее" },
+  "app.title": { "en": "Skip the\nmorning queue", "ru": "Утро\nбез очереди" },
+  "app.text": {
+    "en": "Order in two taps on your way, choose when to pick up and grab your cup from the shelf — still warm.",
+    "ru": "Закажите в два касания по дороге, выберите время и заберите свою чашку с полки — ещё тёплой."
+  },
+  "app.textShort": {
+    "en": "Order in two taps, choose when to pick up, grab your cup from the shelf.",
+    "ru": "Закажите в два касания, выберите время и заберите чашку с полки."
+  },
+  "app.point1": { "en": "Your usual, one tap away", "ru": "Ваш привычный заказ — в одно касание" },
+  "app.point2": { "en": "Pick-up time with live café load", "ru": "Время выдачи с учётом загрузки кофейни" },
+  "app.point3": { "en": "Bring your own cup — €0.30 back", "ru": "Со своей чашкой — скидка 0,30 €" },
+  "app.point4": { "en": "Every 9th coffee on us", "ru": "Каждый 9-й кофе — за наш счёт" },
+  "app.screens": { "en": "App screens", "ru": "Экраны приложения" },
+  "app.altHome": {
+    "en": "App home screen: your usual flat white with oat milk and an Order again button",
+    "ru": "Главный экран приложения: привычный флэт уайт на овсяном и кнопка «Заказать снова»"
+  },
+  "app.altPickup": {
+    "en": "App screen for choosing a pick-up time, showing how busy the café is for each slot",
+    "ru": "Экран выбора времени выдачи с загрузкой кофейни для каждого варианта"
+  },
+  "app.altStatus": {
+    "en": "Order status screen: your flat white is brewing, ready in 4 minutes on shelf 3",
+    "ru": "Экран статуса заказа: флэт уайт готовится, будет на полке 3 через 4 минуты"
+  },
+  "toast.app": {
+    "en": "The app is coming soon — North & Bean is a concept café.",
+    "ru": "Приложение скоро появится — North & Bean пока концепт-кофейня."
+  },
+
   // Legacy sections below — replaced in later parts of the 2.0 redesign.
-  "t26": {
-    "en": "Our Story",
-    "ru": "Наша история"
-  },
-  "t27": {
-    "en": "A corner built for lingering",
-    "ru": "Место, где хочется задержаться"
-  },
-  "t28": {
-    "en": "North & Bean began as a tiny cart on a quiet street corner, with one espresso machine and a stubborn belief that coffee should never be rushed.",
-    "ru": "North & Bean начиналась с маленькой кофейной тележки на тихом перекрёстке. У нас была одна кофемашина и твёрдая уверенность: хороший кофе не терпит спешки."
-  },
-  "t29": {
-    "en": "More than a decade later we still roast our own beans in small batches, source directly from growers we know by name, and pour every cup with the same patience. No shortcuts, no fuss — just honest coffee worth sitting down for.",
-    "ru": "Прошло больше десяти лет, а мы по-прежнему сами обжариваем зерно небольшими партиями, покупаем его напрямую у знакомых фермеров и внимательно готовим каждую чашку. Без суеты и компромиссов в качестве — просто хороший кофе, ради которого стоит сделать паузу."
-  },
-  "t30": {
-    "en": "Years roasting",
-    "ru": "лет обжариваем кофе"
-  },
-  "t31": {
-    "en": "Origin partners",
-    "ru": "фермеров-партнёров"
-  },
-  "t32": {
-    "en": "Slow morning at a time",
-    "ru": "утро без спешки — начнём с вашего"
-  },
   "t33": {
     "en": "Visit Us",
     "ru": "Ждём в гости"
