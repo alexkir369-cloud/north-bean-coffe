@@ -1,8 +1,13 @@
 import { ArrowRight } from 'lucide-react';
-import { t } from '../i18n';
+import { t, tf, type CopyKey } from '../i18n';
+import { clock, useCafeStatus } from '../cafe-status';
 import { imageUrl } from '../images';
 
 export default function Hero() {
+  // Opening hours and busy level follow the real time in Copenhagen.
+  const status = useCafeStatus();
+  const level = status.open ? t(`status.${status.level}` as CopyKey) : '';
+
   return (
     <section id="home" aria-labelledby="hero-title" className="relative isolate flex h-[700px] flex-col overflow-hidden bg-espresso text-paper md:h-[820px]">
       {/* Phones get a portrait crop (woman with coffee + canal); both files are preloaded in index.html. */}
@@ -26,9 +31,15 @@ export default function Hero() {
       <div className="wrap flex flex-1 flex-col pb-[26px] pt-[78px] md:justify-end md:pb-[126px] md:pt-0">
         <div className="flex max-w-[700px] flex-col items-start gap-4 md:gap-6">
           <p className="inline-flex items-center gap-2 rounded-full bg-paper/[0.18] py-1.5 pl-3 pr-3.5 text-xs font-medium backdrop-blur-sm md:border md:border-white/30 md:py-2 md:pl-3.5 md:pr-4 md:text-sm">
-            <span aria-hidden="true" className="size-[7px] rounded-full bg-[#9BD29F] md:size-2" />
-            <span className="md:hidden">{t('hero.statusShort')}</span>
-            <span className="hidden md:inline">{t('hero.status')}</span>
+            <span aria-hidden="true" className={`size-[7px] rounded-full md:size-2 ${status.open ? 'bg-[#9BD29F]' : 'bg-latte'}`} />
+            {status.open ? (
+              <>
+                <span className="md:hidden">{tf('status.openShort', { level })}</span>
+                <span className="hidden md:inline">{tf('status.open', { level, hours: `${clock(status.opens)}–${clock(status.closes)}` })}</span>
+              </>
+            ) : (
+              tf('status.closed', { time: clock(status.nextOpen) })
+            )}
           </p>
 
           <h1 id="hero-title" className="font-serif text-[48px] font-semibold leading-[48px] md:text-[72px] md:leading-[74px] xl:text-[88px] xl:leading-[88px]">

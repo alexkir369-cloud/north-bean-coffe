@@ -15,6 +15,10 @@ export const lang: Lang = (() => {
 
 export const t = (key: CopyKey) => copy[key][lang];
 
+/** t() with {placeholders} replaced, e.g. tf('status.closed', { time: '7:00' }). */
+export const tf = (key: CopyKey, vars: Record<string, string>) =>
+  t(key).replace(/\{(\w+)\}/g, (_, name: string) => vars[name] ?? '');
+
 export const languageHref = (next: Lang) => {
   const url = new URL(window.location.href);
   url.searchParams.set('lang', next);

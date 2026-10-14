@@ -73,14 +73,13 @@ export const copy = {
     "en": "A woman with a takeaway coffee walks along the Nyhavn canal at sunrise",
     "ru": "Девушка с кофе навынос идёт вдоль канала Нюхавн на рассвете"
   },
-  "hero.status": {
-    "en": "Open now · 7:00–18:00 · quiet right now",
-    "ru": "Открыто · 7:00–18:00 · сейчас спокойно"
-  },
-  "hero.statusShort": {
-    "en": "Open now · quiet right now",
-    "ru": "Открыто · сейчас спокойно"
-  },
+  // Live status ({hours}, {time}, {level} are filled in by Hero / Visit from cafe-status.ts)
+  "status.open": { "en": "Open now · {hours} · {level}", "ru": "Открыто · {hours} · {level}" },
+  "status.openShort": { "en": "Open now · {level}", "ru": "Открыто · {level}" },
+  "status.closed": { "en": "Closed · opens at {time}", "ru": "Закрыто · откроемся в {time}" },
+  "status.quiet": { "en": "quiet right now", "ru": "сейчас спокойно" },
+  "status.steady": { "en": "getting busy", "ru": "сейчас оживлённо" },
+  "status.busy": { "en": "busy right now", "ru": "сейчас людно" },
   "hero.title1": {
     "en": "Coffee for slow",
     "ru": "Кофе для неспешного"
@@ -347,7 +346,6 @@ export const copy = {
     "ru": "Гости пробуют кофе из маленьких чашек за столом для каппинга"
   },
   "events.oct": { "en": "Oct", "ru": "окт" },
-  "events.nov": { "en": "Nov", "ru": "ноя" },
   "event.cupping.title": { "en": "Cupping: Ethiopian beans", "ru": "Каппинг: эфиопское зерно" },
   "event.cupping.meta": { "en": "Sat 10:00 · 60 min · free", "ru": "Сб 10:00 · 60 мин · бесплатно" },
   "event.cupping.metaShort": { "en": "Sat 10:00 · free", "ru": "Сб 10:00 · бесплатно" },
@@ -374,10 +372,12 @@ export const copy = {
   "visit.hoursText": { "en": "Mon–Fri 7:00–18:00\nSat–Sun 8:00–17:00", "ru": "Пн–пт 7:00–18:00\nСб–вс 8:00–17:00" },
   "visit.contact": { "en": "Contact", "ru": "Контакты" },
   "visit.busy": { "en": "Usually busy", "ru": "Обычно людно" },
-  "visit.now": { "en": "Now: quiet", "ru": "Сейчас: спокойно" },
+  "visit.now.quiet": { "en": "Now: quiet", "ru": "Сейчас: спокойно" },
+  "visit.now.steady": { "en": "Now: getting busy", "ru": "Сейчас: оживлённо" },
+  "visit.now.busy": { "en": "Now: busy", "ru": "Сейчас: людно" },
   "visit.chart": {
-    "en": "How busy the café usually is from 7:00 to 17:00: busiest at 8 and 9, quiet now at 10.",
-    "ru": "Загрузка кофейни с 7:00 до 17:00: больше всего гостей в 8 и 9 часов, сейчас, в 10, спокойно."
+    "en": "How busy the café usually is from 7:00 to 17:00: busiest at 8 and 9, quietest at 7, 14 and 17.",
+    "ru": "Обычная загрузка кофейни с 7:00 до 17:00: больше всего гостей в 8 и 9 часов, меньше всего — в 7, 14 и 17."
   },
   "visit.note": {
     "en": "Quietest before 7:45 and after 14:00 — or just order ahead.",
@@ -392,11 +392,8 @@ export const copy = {
   "footer.tagline": { "en": "Slow mornings, good coffee.", "ru": "Неспешное утро, хороший кофе." },
   "footer.nav": { "en": "Footer", "ru": "Нижнее меню" },
   "footer.events": { "en": "Events", "ru": "События" },
+  "footer.newTab": { "en": "(opens in a new tab)", "ru": "(откроется в новой вкладке)" },
   "footer.note": { "en": "Concept project · Café details are illustrative", "ru": "Концепт-проект · Данные кофейни приведены для примера" },
-  "toast.instagram": {
-    "en": "Our Instagram is coming soon — North & Bean is a concept café.",
-    "ru": "Instagram скоро появится — North & Bean пока концепт-кофейня."
-  },
 
   // Mobile sticky bar
   "sticky.label": { "en": "Quick order", "ru": "Быстрый заказ" },

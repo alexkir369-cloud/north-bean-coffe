@@ -1,10 +1,8 @@
-import { t, type CopyKey } from '../i18n';
+import { t, tf, type CopyKey } from '../i18n';
 import { photo } from '../images';
+import { BUSY_BY_HOUR, clock, useCafeStatus } from '../cafe-status';
 
-// "Usually busy" from the spec: share of peak for each hour 7–17; 10:00 is highlighted as "now".
-const BUSY = [35, 95, 80, 45, 40, 70, 65, 35, 50, 55, 30];
-const FIRST_HOUR = 7;
-const NOW_HOUR = 10;
+const NOW_COLOR = { quiet: 'text-green', steady: 'text-espresso', busy: 'text-rust' } as const;
 
 const INFO: { label: CopyKey; value: CopyKey; joiner: string }[] = [
   { label: 'visit.address', value: 'visit.addressText', joiner: ', ' },
@@ -12,6 +10,10 @@ const INFO: { label: CopyKey; value: CopyKey; joiner: string }[] = [
 ];
 
 export default function Visit() {
+  // The current Copenhagen hour is highlighted while the café is open.
+  const status = useCafeStatus();
+  const now = status.open ? t(`visit.now.${status.level}` as CopyKey) : tf('status.closed', { time: clock(status.nextOpen) });
+
   return (
     <section id="visit" aria-labelledby="visit-title" className="bg-cream py-14 md:py-20 xl:py-[120px]">
       <div className="wrap grid gap-5 lg:grid-cols-2 lg:items-center lg:gap-14 xl:grid-cols-[557px_560px] xl:gap-20">
@@ -40,15 +42,14 @@ export default function Visit() {
           <div className="flex w-full flex-col gap-3 rounded-[20px] bg-paper p-4 md:w-auto md:gap-3.5 md:rounded-3xl md:px-6 md:py-[22px]">
             <div className="flex items-center justify-between gap-6 font-semibold">
               <p className="text-sm md:text-[15px]">{t('visit.busy')}</p>
-              <p className="text-xs text-green md:text-[13px]">{t('visit.now')}</p>
+              <p className={`text-xs md:text-[13px] ${status.open ? NOW_COLOR[status.level] : 'text-muted'}`}>{now}</p>
             </div>
-            <div role="img" aria-label={t('visit.chart')} className="flex items-end gap-1.5 [--busy-peak:70px] md:gap-2 md:[--busy-peak:90px]">
-              {BUSY.map((share, i) => {
-                const hour = FIRST_HOUR + i;
+            <div role="img" aria-label={`${t('visit.chart')} ${now}.`} className="flex items-end gap-1.5 [--busy-peak:70px] md:gap-2 md:[--busy-peak:90px]">
+              {BUSY_BY_HOUR.map(([hour, share]) => {
                 return (
                   <div key={hour} className="flex flex-col items-center gap-1 md:gap-1.5">
                     <span
-                      className={`block w-5 rounded-[5px] md:w-[30px] md:rounded-md ${hour === NOW_HOUR ? 'bg-espresso' : 'bg-latte/55'}`}
+                      className={`block w-5 rounded-[5px] md:w-[30px] md:rounded-md ${status.open && hour === status.hour ? 'bg-espresso' : 'bg-latte/55'}`}
                       // --busy-peak (set on the chart) is the 100% height: 70 px on phones, 90 px from md.
                       style={{ height: `calc(var(--busy-peak) * ${share / 100})` }}
                     />

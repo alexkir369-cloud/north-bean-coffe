@@ -1,6 +1,6 @@
+import { ArrowUpRight } from 'lucide-react';
 import { t, type CopyKey } from '../i18n';
 import LanguageSwitch from './LanguageSwitch';
-import { useToast } from './toast-context';
 
 const LINKS: { label: CopyKey; href: string }[] = [
   { label: 'nav.menu', href: '#menu' },
@@ -9,8 +9,6 @@ const LINKS: { label: CopyKey; href: string }[] = [
 ];
 
 export default function Footer() {
-  const toast = useToast();
-
   return (
     // Extra bottom padding on phones keeps the note clear of the floating order bar.
     <footer className="bg-espresso pb-[120px] pt-14 text-paper md:py-14">
@@ -27,10 +25,17 @@ export default function Footer() {
                 <a href={link.href} className="rounded-full py-2 hover:text-paper hover:underline hover:underline-offset-4">{t(link.label)}</a>
               </li>
             ))}
-            <li className="hidden md:block">
-              <button type="button" onClick={() => toast(t('toast.instagram'))} className="rounded-full py-2 hover:text-paper hover:underline hover:underline-offset-4">
-                Instagram
-              </button>
+            <li>
+              {/* Placeholder account until the café has its own profile. */}
+              <a
+                href="https://www.instagram.com/alexkir.ux.ui/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 rounded-full py-2 hover:text-paper hover:underline hover:underline-offset-4"
+              >
+                Instagram <ArrowUpRight className="size-3.5" aria-hidden="true" />
+                <span className="sr-only">{t('footer.newTab')}</span>
+              </a>
             </li>
             <li>
               <LanguageSwitch className="-mx-1.5" />

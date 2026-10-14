@@ -5,11 +5,11 @@ import { useToast } from './toast-context';
 
 type EventId = 'cupping' | 'latteArt' | 'baking';
 
-// Dates as in the design spec; the year is intentionally not shown.
-const EVENTS: { id: EventId; day: string; month: CopyKey; full?: boolean }[] = [
-  { id: 'cupping', day: '18', month: 'events.oct' },
-  { id: 'latteArt', day: '25', month: 'events.oct' },
-  { id: 'baking', day: '01', month: 'events.nov', full: true },
+// "Slow Saturdays": all three dates are Saturdays in October 2026.
+const EVENTS: { id: EventId; date: string; full?: boolean }[] = [
+  { id: 'cupping', date: '2026-10-17' },
+  { id: 'latteArt', date: '2026-10-24' },
+  { id: 'baking', date: '2026-10-31', full: true },
 ];
 
 const text = (id: EventId, field: 'title' | 'meta' | 'metaShort' | 'status') => t(`event.${id}.${field}` as CopyKey);
@@ -51,10 +51,10 @@ export default function Events() {
                   onClick={book}
                   className="flex w-full items-center gap-3.5 rounded-[20px] bg-cream p-3.5 text-left transition-colors hover:bg-line/70 xl:gap-5 xl:rounded-3xl xl:p-5"
                 >
-                  <span className="flex shrink-0 flex-col items-center rounded-xl bg-paper px-2.5 py-1.5 font-semibold xl:rounded-2xl xl:px-3.5 xl:py-2.5">
-                    <span className="font-serif text-[26px] leading-tight xl:text-[32px]">{event.day}</span>
-                    <span className="text-[10px] uppercase tracking-[0.12em] text-rust xl:text-[11px]">{t(event.month)}</span>
-                  </span>
+                  <time dateTime={event.date} className="flex shrink-0 flex-col items-center rounded-xl bg-paper px-2.5 py-1.5 font-semibold xl:rounded-2xl xl:px-3.5 xl:py-2.5">
+                    <span className="font-serif text-[26px] leading-tight xl:text-[32px]">{event.date.slice(8)}</span>
+                    <span className="text-[10px] uppercase tracking-[0.12em] text-rust xl:text-[11px]">{t('events.oct')}</span>
+                  </time>
                   <span className="flex min-w-0 flex-col gap-0.5 xl:gap-1">
                     <span className="font-serif text-xl font-semibold leading-tight xl:text-2xl">{text(event.id, 'title')}</span>
                     <span className="text-[13px] text-muted md:hidden">{text(event.id, 'metaShort')}</span>
