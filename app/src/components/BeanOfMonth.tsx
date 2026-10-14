@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { t, type CopyKey } from '../i18n';
+import { photo } from '../images';
 import { useToast } from './toast-context';
 
 const NOTES = ['blueberry', 'jasmine', 'honey', 'bergamot'] as const;
@@ -18,7 +19,8 @@ export default function BeanOfMonth() {
         </div>
 
         <img
-          src={`${import.meta.env.BASE_URL}images/v60-pour-over.webp`}
+          {...photo('v60-pour-over', 1024)}
+          sizes="(min-width: 1280px) 560px, (min-width: 1024px) 50vw, 100vw"
           alt={t('bean.alt')}
           width={1024}
           height={1024}

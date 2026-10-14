@@ -18,7 +18,8 @@ export default function LanguageSwitch({ long = false, className = '' }: { long?
             onClick={(event) => { event.currentTarget.href = languageHref(code); }}
             lang={code}
             hrefLang={code}
-            aria-label={long ? undefined : name}
+            // Keep the visible "EN" in the accessible name (WCAG 2.5.3 label in name).
+            aria-label={long ? undefined : `${label} — ${name}`}
             aria-current={lang === code ? 'true' : undefined}
             className={`rounded-full px-1.5 py-2 transition-opacity ${lang === code ? 'underline decoration-1 underline-offset-4' : 'opacity-75 hover:opacity-100'}`}
           >

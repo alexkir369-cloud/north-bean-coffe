@@ -338,49 +338,69 @@ export const copy = {
     "ru": "Приложение скоро появится — North & Bean пока концепт-кофейня."
   },
 
-  // Legacy sections below — replaced in later parts of the 2.0 redesign.
-  "t33": {
-    "en": "Visit Us",
-    "ru": "Ждём в гости"
+  // Events
+  "events.eyebrow": { "en": "At the café", "ru": "В кофейне" },
+  "events.title": { "en": "Slow Saturdays", "ru": "Неспешные субботы" },
+  "events.all": { "en": "All events", "ru": "Все события" },
+  "events.alt": {
+    "en": "Guests slurping coffee from small bowls at a cupping table",
+    "ru": "Гости пробуют кофе из маленьких чашек за столом для каппинга"
   },
-  "t34": {
-    "en": "Come say hello",
-    "ru": "Загляните на чашку кофе"
+  "events.oct": { "en": "Oct", "ru": "окт" },
+  "events.nov": { "en": "Nov", "ru": "ноя" },
+  "event.cupping.title": { "en": "Cupping: Ethiopian beans", "ru": "Каппинг: эфиопское зерно" },
+  "event.cupping.meta": { "en": "Sat 10:00 · 60 min · free", "ru": "Сб 10:00 · 60 мин · бесплатно" },
+  "event.cupping.metaShort": { "en": "Sat 10:00 · free", "ru": "Сб 10:00 · бесплатно" },
+  "event.cupping.status": { "en": "8 seats left", "ru": "Осталось 8 мест" },
+  "event.latteArt.title": { "en": "Latte art for beginners", "ru": "Латте-арт для начинающих" },
+  "event.latteArt.meta": { "en": "Sat 11:00 · 90 min · €25", "ru": "Сб 11:00 · 90 мин · 25 €" },
+  "event.latteArt.metaShort": { "en": "Sat 11:00 · €25", "ru": "Сб 11:00 · 25 €" },
+  "event.latteArt.status": { "en": "5 seats left", "ru": "Осталось 5 мест" },
+  "event.baking.title": { "en": "Kanelsnegl baking morning", "ru": "Утро выпечки канельснегле" },
+  "event.baking.meta": { "en": "Sat 08:00 · 2 h · €30", "ru": "Сб 08:00 · 2 ч · 30 €" },
+  "event.baking.metaShort": { "en": "Sat 08:00 · €30", "ru": "Сб 08:00 · 30 €" },
+  "event.baking.status": { "en": "Full — join waitlist", "ru": "Мест нет — запишитесь в лист ожидания" },
+  "toast.event": {
+    "en": "Booking opens soon — North & Bean is a concept café.",
+    "ru": "Запись скоро откроется — North & Bean пока концепт-кофейня."
   },
-  "t35": {
-    "en": "Find us",
-    "ru": "Наш адрес"
+
+  // Visit us
+  "visit.eyebrow": { "en": "Visit us", "ru": "Ждём вас" },
+  "visit.title": { "en": "Come say hello", "ru": "Заходите в гости" },
+  "visit.address": { "en": "Address", "ru": "Адрес" },
+  "visit.addressText": { "en": "Nyhavn 31\n1051 Copenhagen K", "ru": "Nyhavn 31\n1051 Копенгаген K" },
+  "visit.hours": { "en": "Hours", "ru": "Часы работы" },
+  "visit.hoursText": { "en": "Mon–Fri 7:00–18:00\nSat–Sun 8:00–17:00", "ru": "Пн–пт 7:00–18:00\nСб–вс 8:00–17:00" },
+  "visit.contact": { "en": "Contact", "ru": "Контакты" },
+  "visit.busy": { "en": "Usually busy", "ru": "Обычно людно" },
+  "visit.now": { "en": "Now: quiet", "ru": "Сейчас: спокойно" },
+  "visit.chart": {
+    "en": "How busy the café usually is from 7:00 to 17:00: busiest at 8 and 9, quiet now at 10.",
+    "ru": "Загрузка кофейни с 7:00 до 17:00: больше всего гостей в 8 и 9 часов, сейчас, в 10, спокойно."
   },
-  "t36": {
-    "en": "Nørrebro, Copenhagen 2200",
-    "ru": "Нёрребро, Копенгаген, 2200"
+  "visit.note": {
+    "en": "Quietest before 7:45 and after 14:00 — or just order ahead.",
+    "ru": "Спокойнее всего до 7:45 и после 14:00 — или просто закажите заранее."
   },
-  "t37": {
-    "en": "Opening hours",
-    "ru": "Часы работы"
+  "visit.alt": {
+    "en": "Sunlit café interior with guests at wooden tables and baristas at the bar",
+    "ru": "Светлый зал кофейни: гости за деревянными столами, бариста за стойкой"
   },
-  "t38": {
-    "en": "Mon – Fri · 7:00 – 18:00",
-    "ru": "Пн–пт · 7:00–18:00"
+
+  // Footer
+  "footer.tagline": { "en": "Slow mornings, good coffee.", "ru": "Неспешное утро, хороший кофе." },
+  "footer.nav": { "en": "Footer", "ru": "Нижнее меню" },
+  "footer.events": { "en": "Events", "ru": "События" },
+  "footer.note": { "en": "Concept project · Café details are illustrative", "ru": "Концепт-проект · Данные кофейни приведены для примера" },
+  "toast.instagram": {
+    "en": "Our Instagram is coming soon — North & Bean is a concept café.",
+    "ru": "Instagram скоро появится — North & Bean пока концепт-кофейня."
   },
-  "t39": {
-    "en": "Sat – Sun · 8:00 – 17:00",
-    "ru": "Сб–вс · 8:00–17:00"
-  },
-  "t40": {
-    "en": "Get in touch",
-    "ru": "Связаться с нами"
-  },
-  "t41": {
-    "en": "Back to top ↑",
-    "ru": "Наверх ↑"
-  },
-  "t42": {
-    "en": "Demonstration website.",
-    "ru": "Демонстрационный сайт."
-  },
-  "t43": {
-    "en": "Fictional café · Sample address, hours and contact details · Prices shown in EUR.",
-    "ru": "Вымышленная кофейня · Адрес, часы работы и контакты приведены для примера · Цены в евро."
-  }
+
+  // Mobile sticky bar
+  "sticky.label": { "en": "Quick order", "ru": "Быстрый заказ" },
+  "sticky.usual": { "en": "Your usual · Flat White", "ru": "Как обычно · флэт уайт" },
+  "sticky.ready": { "en": "Ready in ~6 min", "ru": "Готов через ~6 мин" },
+  "sticky.order": { "en": "Order again", "ru": "Повторить" },
 } as const;

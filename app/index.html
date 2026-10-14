@@ -9,7 +9,13 @@
     <title>North &amp; Bean — Coffee for slow Copenhagen mornings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" />
+    <!-- Fonts load without blocking the first paint; text uses fallbacks for a moment (display=swap). -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" /></noscript>
+    <!-- Hero photo is the largest paint; fetch it in parallel with the JS bundle. -->
+    <link rel="preload" as="image" href="/images/hero-nyhavn-morning-mobile.webp" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/hero-nyhavn-morning.webp" media="(min-width: 768px)" fetchpriority="high" />
   </head>
   <body>
     <div id="root"></div>

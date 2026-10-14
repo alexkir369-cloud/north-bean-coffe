@@ -1,4 +1,5 @@
 import { t, type CopyKey } from '../i18n';
+import { photo } from '../images';
 
 const STATS: { value: string; label: CopyKey; short: CopyKey }[] = [
   { value: '10+', label: 'story.years', short: 'story.yearsShort' },
@@ -11,7 +12,9 @@ export default function Story() {
     <section id="story" aria-labelledby="story-title" className="pb-14 md:pb-20 xl:pb-[120px] xl:pt-10">
       <div className="wrap grid gap-5 lg:grid-cols-2 lg:items-center lg:gap-14 xl:grid-cols-[620px_500px] xl:gap-20">
         <img
-          src={`${import.meta.env.BASE_URL}images/our-story-couple.webp`}
+          {...photo('our-story-couple', 1152)}
+          // object-cover fills the height, so the needed width exceeds the box: 1.95 × height.
+          sizes="(min-width: 1280px) 1014px, (min-width: 768px) 820px, 507px"
           alt={t('story.alt')}
           width={1152}
           height={592}

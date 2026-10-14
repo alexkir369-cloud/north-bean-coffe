@@ -8,7 +8,10 @@ import Story from './components/Story';
 import BeanOfMonth from './components/BeanOfMonth';
 import OrderApp from './components/OrderApp';
 import { ToastProvider } from './components/Toast';
-import { LegacyFooter, LegacySections } from './components/LegacySections';
+import Events from './components/Events';
+import Visit from './components/Visit';
+import Footer from './components/Footer';
+import StickyOrderBar from './components/StickyOrderBar';
 
 function useRevealOnScroll() {
   useEffect(() => {
@@ -50,9 +53,11 @@ function App() {
         <Story />
         <BeanOfMonth />
         <OrderApp />
-        <LegacySections />
+        <Events />
+        <Visit />
       </main>
-      <LegacyFooter />
+      <Footer />
+      <StickyOrderBar />
     </ToastProvider>
   );
 }

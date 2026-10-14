@@ -1,6 +1,7 @@
 import { useRef, useState, type KeyboardEvent } from 'react';
 import { ArrowRight, Check, Leaf, Plus } from 'lucide-react';
 import { formatPrice, t, type CopyKey } from '../i18n';
+import { photo } from '../images';
 import { CATEGORIES, DIETS, LIST_COLUMNS, MENU, type Category, type Diet, type MenuItem } from '../data/menu';
 import { useToast } from './toast-context';
 
@@ -109,7 +110,8 @@ export default function Menu() {
                   <li key={item.id} className="flex flex-col gap-2 md:gap-3.5">
                     <div className="relative aspect-[168/180] overflow-hidden rounded-[20px] bg-cream md:aspect-square md:rounded-3xl">
                       <img
-                        src={`${import.meta.env.BASE_URL}images/${card.image}`}
+                        {...photo(card.image.replace('.webp', ''), 1024)}
+                        sizes="(min-width: 1280px) 294px, (min-width: 768px) 30vw, 45vw"
                         alt={cardText(item, 'alt')}
                         width={1024}
                         height={1024}

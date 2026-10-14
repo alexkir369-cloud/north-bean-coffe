@@ -1,18 +1,23 @@
 import { ArrowRight } from 'lucide-react';
 import { t } from '../i18n';
+import { imageUrl } from '../images';
 
 export default function Hero() {
   return (
     <section id="home" aria-labelledby="hero-title" className="relative isolate flex h-[700px] flex-col overflow-hidden bg-espresso text-paper md:h-[820px]">
-      <img
-        src={`${import.meta.env.BASE_URL}images/hero-nyhavn-morning.webp`}
-        alt={t('hero.alt')}
-        width={1376}
-        height={768}
-        // React 18 only forwards the lowercase attribute.
-        {...{ fetchpriority: 'high' }}
-        className="absolute inset-0 -z-10 size-full object-cover object-[20%_center] md:object-[30%_center] xl:object-center"
-      />
+      {/* Phones get a portrait crop (woman with coffee + canal); both files are preloaded in index.html. */}
+      <picture>
+        <source media="(max-width: 767px)" srcSet={imageUrl('hero-nyhavn-morning-mobile.webp')} width={560} height={768} />
+        <img
+          src={imageUrl('hero-nyhavn-morning.webp')}
+          alt={t('hero.alt')}
+          width={1376}
+          height={768}
+          // React 18 only forwards the lowercase attribute.
+          {...{ fetchpriority: 'high' }}
+          className="absolute inset-0 -z-10 size-full object-cover md:object-[30%_center] xl:object-center"
+        />
+      </picture>
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(43,29,23,0.88)_0%,rgba(43,29,23,0.62)_38%,rgba(43,29,23,0)_55%,rgba(43,29,23,0)_82%,rgba(43,29,23,0.6)_100%)] md:bg-[linear-gradient(90deg,rgba(43,29,23,0.72)_0%,rgba(43,29,23,0.25)_55%,rgba(43,29,23,0)_100%)]"

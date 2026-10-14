@@ -12,7 +12,8 @@ export default {
         // Spec value #7A6A60 is 4.4:1 on cream; nudged darker to pass WCAG AA (4.8:1).
         muted: '#74645A',
         line: '#E8DCCB',
-        green: '#4F7A55',
+        // Spec value #4F7A55 is 4.2:1 on cream; nudged darker to pass WCAG AA (4.6:1).
+        green: '#4A7350',
         cup: {
           shot: '#3B2219',
           milk: '#E9D7BE',
